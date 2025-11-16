@@ -11,12 +11,12 @@ class Solution {
         return slow == 1;
     }
 
-    private int sumOfSquares(int num) {
+    private int sumOfSquares(int number) {
         int sum = 0;
-        while (num > 0) {
-            int digit = num % 10;
+        while (number > 0) {
+            int digit = number % 10;
             sum += digit * digit;
-            num /= 10;
+            number /= 10;
         }
         return sum;
     }
